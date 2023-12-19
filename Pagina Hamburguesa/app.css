@@ -1,0 +1,39 @@
+body{
+    background-color: #ddd
+}
+.card{
+    background-color: white !important;
+    
+}
+.hero-3{
+    background-color: red;
+    height: 200px;
+}
+.btn-danger{
+    width: 264px;
+    
+}
+
+
+.col-md-3 {
+    margin: 0px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.col-md-6{
+    margin-top: 30px;
+}
+
+/* DARK */
+.dark{
+    background-color: black;
+    color: blueviolet;
+}
+.btn-primary{
+    width: 264px;
+    
+}
+.card-dark{
+    background-color:#ddd;
+    
+}
