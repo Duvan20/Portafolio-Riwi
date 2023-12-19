@@ -1,0 +1,435 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Cardo', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* START HEADER */
+
+header{
+    width: 100%;
+    position: fixed;
+    min-height: 50px;
+    background-color: #22408C;
+    color: white; 
+    display: flex;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 999;
+}
+
+.caja-logo{
+    width: 20%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.a-foro {
+    width: 40%;
+    background-color: white;
+    color: #004AF0;
+    border: solid 1px #1EE759;
+    font-size: 15px;
+    padding: 8px;
+    font-weight: bolder;
+    font-style: italic;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-comunidad{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    background-image: url(../img/community_green.png);
+}
+
+.caja-logo img{
+    width: 100px;
+}
+
+.caja-logo p:hover{ 
+    background-color: #1EE759;
+    color: white;
+    border: solid 1px #004AF0;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+.caja-logo p:hover .img-comunidad{
+    background-image: url(../img/community.png);
+}
+
+
+
+.caja-opciones-menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja-opciones-menu a{
+    width: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.caja-opciones-menu a:hover{
+    color: aqua;
+}
+
+.caja-opciones-menu a:active{
+    color: rgb(0, 255, 34);
+}
+
+
+.menu-categorias {
+    width: auto;
+    padding:10px;
+    display: none;
+    color: white;
+    top: 22px;
+    position: absolute;
+    background-color: #22408C;
+}
+
+.menu-categorias li{
+    width: 100%;
+    font-size: 15px;
+    margin: 8px 8px 0px 20px;
+}
+
+
+.menu-categorias li:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.tecnologia-nav:hover .menu-categorias{
+    display: block;
+    opacity: 1;
+    transition-duration: 1s;
+
+}
+
+.idiomas-nav:hover .menu-categorias{
+    display: block;
+}
+
+.entretenimiento-nav:hover .menu-categorias{
+    display: block;
+    transition-duration: 1s;
+}
+
+.otros-nav:hover .menu-categorias{
+    display: block;
+}
+
+
+.caja-botones-acceso{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.caja-botones-acceso a{
+    width: auto;
+    font-size: 18px;
+    font-weight:500;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-color: #22408C;
+}
+
+#registrate{
+    background-color: #004AF0;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+#ingresar:hover{
+    background-color: #004AF0;
+    color: aqua;
+    border-radius: 50px;
+}
+
+#ingresar:hover + #registrate{
+    background-color: #22408C;
+    border-radius: 0px;
+    color: white;
+    transition-duration: 1s;
+}
+
+.caja-idiomas{
+    width: 10%;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.caja-idiomas-link{
+    width:80%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.caja-idiomas-link-colombia{
+    position: relative;
+    z-index: 999;
+}
+
+.caja-idiomas-link-usa{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    transition-duration: 1s;
+    z-index: 1;
+}
+
+.caja-idiomas-link-colombia, .caja-idiomas-link-usa{
+    width:100%; 
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22408C;
+}
+
+.caja-idiomas-link-colombia:hover, .caja-idiomas-link-usa:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.caja-idiomas-link:hover .caja-idiomas-link-usa{
+    top: 35px;
+}
+
+.caja-idiomas img{
+    width: 30px;
+}
+
+.triangle-idioma{
+    transform: rotate(60deg);
+    width: 20px;
+}
+
+.idiomas-texto{
+    width: auto;
+    margin:0px 5px 0px 5px;
+}
+
+.idiomas-texto h6{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.button-imagen{
+    width: auto;
+}
+
+.button-imagen img{
+    width: 15px;
+    transform: rotate(60deg);
+}
+
+/* END HEADER */
+
+
+img{
+    width: 20px;
+}
+
+body{
+    background-color: #1ee75a15;
+    /* background-image: url(./fondologin.JPG); */
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url("tu foto")no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: #004AF0;
+    
+}
+
+.form-value{
+    margin-top: 80px;
+
+
+    position: relative;
+    width:400px ;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0,5);
+    border-radius: 20px;
+    backdrop-filter:blur(25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soy-mentor{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: #004AF0;
+    transition:ease-in-out .4s ;
+}
+
+.soy-mentor:hover{
+    background-color: #004AF0;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    transition:ease-in-out .4s ;
+}
+
+.soy-mentor:hover + .soy-aprendiz{
+    background-color: white !important;
+    font-weight: 600;
+    color: #004AF0;
+    transition:ease-in-out .4s ;
+}
+
+
+h2{
+    font-size: 2em;
+    color: #004AF0;
+    text-align: center;
+}
+.caja-input{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    color: white;
+    border-bottom: 2px solid #004AF0;
+}
+.caja-input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #004AF0;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus , label,
+input:valid,label{
+    top: -5px;
+}
+.caja-input input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 35px 0 5px;
+    color: #004AF0;
+    font-weight: 400;
+}
+.caja-input ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #004AF0;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #004AF0;
+    display: flex;
+    justify-content: space-between;
+}
+.forget label input{
+    margin-right: 3px;
+
+}
+.forget label a{
+    color: #004AF0;
+    text-decoration: none;
+    margin-left: 60px;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #004AF0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+}
+
+.registrate{
+    font-size: .9em;
+    color: #004AF0;
+    text-align: center;
+    margin: 25px 0 10px;
+
+}
+.registrate p a:hover{
+    text-decoration: underline;
+}
+.seleccion-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+
+.logo{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+   
+    
+}
+.logo img{
+    width: 200px;   
+}
