@@ -1,0 +1,511 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio de Duvan</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">DUVAN</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <!--<li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>-->
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <!--<li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>-->
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/fotoperfil.JPG" alt="">
+            </div>
+            <h1>DUVAN MORALES M.</h1>
+            <h2>Ingeniero de Software - ESTUDIANTE DE RIWI</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Duvan .</span></p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            18/04/2005
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            310 710 0993
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Duvanmmontoya@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ubicacion</strong>
+                            <a href="https://www.google.com/maps/place/Dg.+59+%2345-72,+Ciudad+Niquia,+Bello,+Antioquia/@6.3426959,-75.5556293,17z/data=!3m1!4b1!4m5!3m4!1s0x8e442fbd19bf3787:0x3ea6752894e3a4b7!8m2!3d6.3426906!4d-75.5530544?entry=ttu"></a>
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            DIG 59 #45-72
+                        </li>
+                        <li>
+                            <strong>EDAD</strong>
+                            <span>18</span>
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Estudiante de riwi</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>MOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gym"></i>
+                            <span>GYM</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Tecnicas de Programacion</h3>
+                    <div class="skill">
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso ">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                            
+                            <span>Html y CSS</span>
+                            <div class="barra-skill">
+                            <div class="progreso  ">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="skill">
+                        <span>lenguaje back end</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>0%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Base de Datos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <!--<section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./img/PYTOHN 3.jpg" alt="">
+                    <div class="overlay">
+                        <h3> ejercicios python</h3>
+                        <p>Ejerccios </p>
+                        <button class=" btn btn-primary"  > <a href="./EJERCICIOS DE REPASO/" class="text-light decoration-none" target="_blank">Ver aqui</a> </button>
+
+                        
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/login.jpg" alt="">
+                    <div class="overlay">
+                        <h3>login</h3>
+                        <p>hmtl</p>
+                        <button class=" btn btn-primary"  > <a href="./ejercicio1/login.html" class="text-light decoration-none" target="_blank">Ver aqui</a> </button>
+                    </div>
+                    
+                </div>
+                <div class="proyecto">
+                    <img src="img/2mercado.jpg" alt="">
+                    <div class="overlay">
+                        <h3>MERCADO</h3>
+                        <p>HTML Y css</p>
+                        <button class=" btn btn-primary"> <a href="./ejercicio 4/lista.html" class="text-light decoration-none" target="_blank" >ver aqui</a></button>
+
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/calculadorapro.jpg" alt="">
+                    <div class="overlay">
+                        <h3>CALCULADORA</h3>
+                        <p>Javascript</p>
+                        <button class=" btn btn-primary"><a href="./calculadora/index.html" target="_blank" class="text-light decoration-none">ver aqui</a></button>
+                        
+
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/calculadorapro.jpg" alt="">
+                    <div class="overlay">
+                        <h3>CALCULADORA PRO</h3>
+                        <p>Javascript</p>
+                        <button class=" btn btn-primary"> Proximamente... </button>
+
+
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/base de datos js.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Base de datos js</h3>
+                        <p>Javascript</p>
+                        <button class=" btn btn-primary"><a href="./Base de  datos con js/base.html" target="_blank" class="text-light decoration-none">ver aqui</a></button>
+                    
+
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/kfc.jpg" alt="">
+                    <div class="overlay">
+                        <h3> pagina hamburguesa</h3>
+                        <p>Javascript  boostrapst</p>
+                        <button class=" btn btn-primary"><a href="./Pagina Hamburguesa/index.html" target="_blank" class="text-light decoration-none">ver aqui</a></button>
+                       
+
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/harry.jpg" alt="">
+                    <div class="overlay">
+                        <h3>harry potter</h3>
+                        <p>Javascript boostrapst</p>
+                        <button class=" btn btn-primary"><a href="./harry potter/index.html" target="_blank" class="text-light decoration-none">ver aqui</a></button>
+                        
+
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ahorcado.jpg" alt="">
+                    <div class="overlay">
+                        <h3>juego de el ahorcado</h3>
+                        <p>Javascript</p>
+                        <button class=" btn btn-primary"><a href="./Juego javascript/index.html" target="_blank" class="text-light decoration-none">ver aqui</a></button>
+                        
+
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/intagram.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Perfil de instagram</h3>
+                        <p>Javascript</p>
+                        <button class=" btn btn-primary"><a href="./ejercicio 3/inst.html" target="_blank" class="text-light decoration-none">ver aqui</a></button>
+                        
+
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/imgseguridad.jpg" alt="">
+                    <div class="overlay">
+                        <h3>login y cerran seccion tipo instagram</h3>
+                        <p>Javascript</p>
+                        <button class=" btn btn-primary"><a href="./LoginPersonalizado/index.html" target="_blank" class="text-light decoration-none">ver aqui</a></button>
+                        
+
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portafoli10.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Mi primer Portafolio</h3>
+                        <p>html y CSS</p>
+                        <button class=" btn btn-primary"><a href="./PrimerPortafolio/index.html" target="_blank" class="text-light decoration-none">ver aqui</a></button>
+                               
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/macondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Macondo</h3>
+                        <p>html y CSS</p>
+                        <button class=" btn btn-primary"><a href="./macondo 2.0/index.html" target="_blank" class="text-light decoration-none">ver aqui</a></button>
+                                
+                    </div>
+                </div>
+               
+                
+                
+                <div class="proyecto">
+                    <img src="img/portafoli8.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Hoja de vida</h3>
+                        <p>html y CSS</p>
+                        <button class=" btn btn-primary"><a href="./ejercicio2/index.html" target="_blank" class="text-light decoration-none">ver aqui</a></button>
+
+                           
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/base de datos.jpg" alt="">
+                    <div class="overlay">
+                        <h3>proximo trabajo</h3>
+                        <p>html y CSS</p>
+                        <button class=" btn btn-primary"> Proximamente...</button>          
+                    </div>
+                </div>
+                
+               
+                <div class="proyecto">
+                    <img src="img/logo.png" alt="">
+                    <div class="overlay">
+                        <h3>mentor 1</h3>
+                        <p>html y CSS</p>
+                        <button class=" btn btn-primary"><a href="./MENTORRRRRRR/index.html" target="_blank" class="text-light decoration-none">ver aqui</a></button>
+                              
+                    </div>
+                    
+                </div>
+                <div class="proyecto">
+                    <img src="img/logo.png" alt="">
+                    <div class="overlay">
+                        <h3>mentor 2</h3>
+                        <p>html y CSS</p>
+                        <button class=" btn btn-primary">Procimamente...</button>          
+                    </div>
+                    
+                </div>
+                <div class="proyecto">
+                    <img src="img/logo.png" alt="">
+                    <div class="overlay">
+                        <h3>mentor 3</h3>
+                        <p>html y CSS</p>
+                        <button class=" btn btn-primary">Proximamente.. </button>          
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
