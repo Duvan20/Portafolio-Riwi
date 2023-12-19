@@ -1,0 +1,266 @@
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translate(calc((100%-100vw)/2));
+    z-index: -2;
+
+
+}
+*{
+    font-family: 'Harry Potter', sans-serif;
+
+}
+.titulo{
+    font-family: 'Harry Potter', sans-serif;
+    color: white;
+    margin: 200px;
+    font-size: 100px;
+
+}
+.hero1-caja{
+    display: flex;
+    margin: 200px
+}
+.btn-inicio{
+    padding: 50px;
+    font-family: 'Harry Potter', sans-serif;
+    color: white;
+    font-size: 75px;
+    padding-top: 285px;
+    padding-left: 498px;
+    background-color: transparent;
+    border: transparent;
+}
+.btn-inicio:hover{
+    color: blue;
+}
+
+.caja1{
+    padding-bottom: 50px;
+}
+/* .imagen{
+    background-image: url('');
+    background-size: 100% 100%;
+    background-position: center center;
+    display: block;
+
+} */
+
+.imagen2{
+    background-image: url("../img/imagen-hero2.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+/*     background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden; */
+}
+.imagen3{
+
+    background-image: url("../img/sombrero\ magico.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.imagen4{
+    background-image: url("../img/dragon.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.formulario{
+    display: block;
+ 
+}
+.container{
+   color: white;
+   font-family: 'Harry Potter', sans-serif;
+   font-size: 30px;
+  
+   
+}
+.translate-middle-y{
+    transform: translateY(20%) !important;
+}
+.mensaje1{
+    font-size: 25px;
+}
+*{
+    margin: 5px;
+    padding: 0;
+}
+.caja1{
+    padding-right: 1000px;
+
+}
+.regalo{
+    background-image: url(../img/Leonardo_Diffusion_XL_un_regalo_magico_del_mundo_de_harry_pott_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 205px;
+    width: 303px;
+    object-fit: cover;
+}
+.gryffindor{
+    background-image:  url(../img/Gryffindor.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 307px;
+    width: 303px;
+    object-fit: cover;
+
+}
+.huflepuff{
+    background-image: url(../img/Hufflepuff.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 470px;
+    width: 303px;
+    object-fit: cover;
+
+}
+.revenclaw{
+    background-image: url(../img/Ravenclaw.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 308px;
+
+    width: 303px;
+    object-fit: cover;
+
+}
+.slytherin{
+    background-image: url(../img/Slytherin\ .webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 303px;
+    object-fit: cover;
+
+}
+.texto-color{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip:text;
+ 
+
+
+
+}
+.imagen4{
+    background-image: url(../img/estudiante.webp);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+
+}
+.texto-color{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to left, #fff,#f3a55c,#ec6a1e,#f3a55c,#fff);
+    animation: color 3s linear infinite ;
+    background-size: 500%;
+    font-size: 40px;
+}
+
+@keyframes color{
+    from{
+        background-position: 0% 50%;
+    }
+    to{
+        background-position: 100% 50%;
+    }
+}
+.trasfromaciones{
+    background-image: url(../img/imagen1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 307px;
+    width: 303px;
+    object-fit: cover;
+
+}
+.herboligia{
+    background-image: url(../img/imagen2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 307px;
+    width: 303px;
+    object-fit: cover;
+
+}
+.pocision{
+    background-image: url(../img/imagen3.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 307px;
+    width: 303px;
+    object-fit: cover;
+
+}
+.encantaminetos{
+    background-image: url(../img/imagen4.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 307px;
+    width: 303px;
+    object-fit: cover;
+
+}
+.defensa{
+    background-image: url(../img/imagen7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 307px;
+    width: 303px;
+    object-fit: cover;
+
+}
+.animalesmagico{
+    background-image: url(../img/imagen6.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 307px;
+    width: 303px;
+    object-fit: cover;
+
+}
+.historiademagia{
+    background-image: url(../img/imagen5.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 307px;
+    width: 303px;
+    object-fit: cover;
+
+}
+.susto{
+    background-image: url("../img/duvan.webp");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+.imagen-final{
+    background-image: url(../img/harrypotter.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
